@@ -76,7 +76,10 @@
     font-size: 20px;
 }
 #nav{
-	text-align: right;
+	text-align: left;
+}
+#logo, nav{
+  display: inline;
 }
 .dropdown {
     position: relative;
