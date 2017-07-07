@@ -1,14 +1,7 @@
 .action{
-	height: 10em;
 	background:url("Images/actionBG.png") 0 0 repeat #005073;
 	background:url("Images/actionBG.png") 0 0 repeat #005073;
 	color:#ffffff;
-}
-.action1{
-    height: 10em;
-    /*background:url("Images/blur.jpg") 0 0 repeat #005073;
-    background:url("Images/blur.jpg") 0 0 repeat #005073;
-    color:#ffffff;*/
 }
 .bod{
   background:url("Images/lu.jpg") 0 0 repeat #005073;
@@ -92,7 +85,7 @@
 
 .dropdown-content {
     	display: none;
-    	position: absolute;
+    	position: fixed;
     	background-color: #f9f9f9;
    	 	min-width: 160px;
     	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -153,6 +146,15 @@ th,td {
     width: 100%;
     background: #FD5F00;
 }
+.sliding-middle-out:hover:after {
+    width: 100%;
+    background: #FD5F00;
+}
+#menu:hover>.sliding-middle-out:after {
+    width: 100%;
+    background: #FD5F00;
+}
+
 .ss-icon{color:#fff}
 .ss-icon{display:block;font-style:normal;font-weight:400}
 .ss-icon{line-height:52px;font-size:100px;padding-top:8px}
@@ -320,7 +322,7 @@ border-radius: 20px 0px 0px 20px;
 }
 .backg{
   background-image:url(Images/storybg.jpg);
-  height: 52em;
+  height: 80em;
 }
 @-webkit-keyframes example {
     0% {background-image: url(Images/a1.jpg);}

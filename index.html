@@ -1,48 +1,67 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- saved from url=(0059)http://callmenick.com/_development/resize-header-on-scroll/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<!-- title and meta -->
+
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mentors</title>
   <link rel="stylesheet" type="text/css" href="style.css">
   <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
   <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="makerfont.css">
- <!-- <script type="text/javascript">
-      myform2.mytextfield2.Enabled = false;
-          $(window).blur(function(){
-    $( "form #mytextfield2" ).focus();
-});
-$(window).focus(function(){
-  //your code
-  $( "form #mytextfield2" ).focus();
-});
-  </script> -->
-  <script type="text/javascript">
+  <link rel="stylesheet" type="text/css" href="makerfont.css">    
+<!-- css -->
+<link rel="stylesheet" href="./Header Resize On Scroll with Animations_files/style.css">
+    
+<!-- js --><script src="classie.js.download"></script>
+<script>
+    function init() {
+        window.addEventListener('scroll', function(e){
+            var distanceY = window.pageYOffset || document.documentElement.scrollTop,
+                shrinkOn = 300,
+                header = document.querySelector("header");
+            if (distanceY > shrinkOn) {
+                classie.add(header,"smaller");
+            } else {
+                if (classie.has(header,"smaller")) {
+                    classie.remove(header,"smaller");
+                }
+            }
+        });
+    }
+    window.onload = init();
+</script>
+<script type="text/javascript">
      function myPop() {
     var popup = document.getElementById("myPopup");
     popup.classList.toggle("show");
       }
-      /*function myPopout() {
-    var popup = document.getElementById("myPopup");
-    popup.classList.show("hide");
-      }*/
    </script>
-</head>
-<body id="png" onclick="document.getElementById("male").blur();">
-<div class="action">
-  <div class="col4">
-    <h1 style="text-align: center;padding-top: 8%;"><a href="../" style="text-decoration: none;color: white;">Ek PAHAL</a> </h1>
-  </div>
-  <div style="padding-top: 5%;padding-right: 4%;" class="col8">
-    <div id="nav" >
+<script id="_carbonads_projs" type="text/javascript" src="http://srv.carbonads.net/ads/C6AILKT.json?segment=placement:callmenickcom&amp;callback=_carbonads_go"></script><script type="text/javascript" src="http://fallbacks.carbonads.com/home/e99a260b94849497ea962f674f0aebd9/?149932588"></script></head>
+
+
+
+<body>
+
+<div id="wrapper">
+
+<header class="action">
+    <div class="container clearfix">
+        <h1 id="logo">
+            <a href="../" style="text-decoration: none;color: white;">Ek PAHAL</a>
+        </h1>
+        <nav>
+            <div id="nav" >
         <div class="dropdown"  id="raj">
           <span id="menu" class="sliding-middle-out">About Us</span>
-          <div class="dropdown-content" style="color: black;">
+          <div class="dropdown-content" style="color: black;line-height: 30px;">
               <table id="tab">
-                <tr><td><a id="lk" href="../our-story">Our Story</a></td></tr>
-                <tr><td><a id="lk" href="../vision">Vision,Mission & Motto</a></td></tr>
-                <tr><td><a id="lk" href="../people">People</a></td></tr>
-                <tr><td><a id="lk" href="../mentors">Mentors</a></td></tr>
+                <tr><td><a style="line-height: 30px;" id="lk" href="../our-story">Our Story</a></td></tr>
+                <tr><td><a style="line-height: 30px;" id="lk" href="../vision">Vision,Mission & Motto</a></td></tr>
+                <tr><td><a style="line-height: 30px;" id="lk" href="../people">People</a></td></tr>
+                <tr><td><a style="line-height: 30px;" id="lk" href="../mentors">Mentors</a></td></tr>
               </table>
             </div>
         </div>
@@ -50,39 +69,65 @@ $(window).focus(function(){
           <span id="menu" class="sliding-middle-out">Programs</span>
           <div class="dropdown-content">
               <table id="tab">
-                <tr><td><a id="lk" href="../Community-school">Community School</a></td><td><a id="lk" href="../gateway-fellowship">Gateway Fellowship</a></td></tr>
-                <tr><td><a id="lk" href="../anwesha/">Anwesha</a></td><td><a id="lk" href="../teach-change">Teach for change (TFC)</a></td></tr>
-                <tr><td><a id="lk" href="../swamanthan">Swamanthan</a></td><td><a id="lk" href="../mentorship">1 to 1 Mentorship</a></td></tr>
-                <tr><td><a id="lk" href="../aslp">ASLP</a></td><th></th></tr>
+                <tr><td><a style="line-height: 30px;" id="lk" href="../Community-school">Community School</a></td><td><a style="line-height: 30px;"  id="lk" href="../gateway-fellowship">Gateway Fellowship</a></td></tr>
+                <tr><td><a id="lk" style="line-height: 30px;" href="../anwesha/">Anwesha</a></td><td><a id="lk" style="line-height: 30px;" href="../teach-change">Teach for change (TFC)</a></td></tr>
+                <tr><td><a id="lk" style="line-height: 30px;" href="../swamanthan">Swamanthan</a></td><td><a id="lk" style="line-height: 30px;" href="../mentorship">1 to 1 Mentorship</a></td></tr>
+                <tr><td><a id="lk" style="line-height: 30px;" href="../aslp">ASLP</a></td><td></td></tr>
               </table>
             </div>
         </div>
-          <span id="menu" class="sliding-middle-out"><a href="../impact" style="color: white;text-decoration: none;">Impact</a></span>
+        <div class="dropdown">
+          <a href="../impact" id="menu" class="sliding-middle-out" style="color: white;text-decoration: none;">Impact</a>
+        </div>
         <div class="dropdown"  id="raj">
           <span id="menu" class="sliding-middle-out">Get Involved</span>
           <div class="dropdown-content">
               <table id="tab">
-                <tr><td><a id="lk" href="https://docs.google.com/forms/d/e/1FAIpQLSeqXmylWXPt0xyHzFpbLFYLcUJP1USnYx9mhT0PGjKcImU0UQ/viewform">Donate Time</a></td></tr>
-                <tr><td><a id="lk" href="../donate-resource">Donate Resources</a></td></tr>
+                <tr><td><a id="lk" style="line-height: 30px;" href="https://docs.google.com/forms/d/e/1FAIpQLSeqXmylWXPt0xyHzFpbLFYLcUJP1USnYx9mhT0PGjKcImU0UQ/viewform">Donate Time</a></td></tr>
+                <tr><td><a id="lk" style="line-height: 30px;" href="../donate-resource">Donate Resources</a></td></tr>
               </table>
             </div>
         </div>
           <span id="menu" class="sliding-middle-out"><a href="../contact-us" style="color: white;text-decoration: none;">Contact Us</a></span>
         
-  </div>  </div>    
-</div><div>
-
-<div class="backg" style="margin-top: 5px;padding-top: 7px;position: relative"> <div style="position: relative;">
-<h1 style="color: #9090ff;text-align: center;font-family:Dancing Script;font-weight: 600;font-size: 30px;"> <span style="color: white;font-size: 38;">Mentor</span>s</h1>
-  <div style="position: relative;padding-top: 9px;font-family: cursive;font-weight: 400;padding-left: 10%;color: white;font-size: 20px;padding-right: 10%;"><br>
-    H C Verma, Prakahr Bhartiya, N.K.Sinha, Ravi Gulati, Shyam Kumar<br><br><br><br>
-<p style="text-align: center;"></p>
   </div>
-</div>
-</div>
+        </nav>
+    </div>
+</header><!-- /header -->
 
-
-<div class="end" style="position: relative;">
+<div id="main">
+    <div id="">
+        <section style="padding-bottom: 0px;">
+            <div class="backg" style="padding-top: 7px;margin-top: 10px;position: relative"> <div style="position: relative;">
+            <h1 style="color: #9090ff;text-align: center;font-family:Dancing Script;font-weight: 600;font-size: 30px;"> <span style="color: white;font-size: 38;">Mentor</span>s</h1>
+                <div style="position: relative;padding-top: 9px;font-family: cursive;font-weight: 400;padding-left: 10%;color: white;font-size: 20px;padding-right: 10%;"><br>
+                 <span style="padding-left: 30px;"> H C Verma</span><br><br>
+                 <div class="col-sm-2">
+                   <img src="Images/hcv.png">
+                 </div><div class="col-sm-10">
+                   He is a Professor in Department of physics, IIT Kanpur. He has authored several books including the bestseller physics book Concepts of Physics at introductory college level and Quantum Physics at college level. He is also working on school Physics project and Physics teacher training process.<br><br><br><br>
+                 </div>
+                 <span style="padding-left: 30px;"> Prakhar Bhartiya</span><br><br>
+                 <div class="col-sm-2">
+                   <img src="Images/prakhar.png">
+                 </div><div class="col-sm-10">
+                   He is the founder of the Youth-Alliance, currently working on connecting youth to social causes through his non-profit organization Youth- Alliance. He was a part of Teach For India’s first cohort of Fellows (2009-2011).<br><br><br><br>
+                 </div>
+                  <br><br>
+                 N.K.Sinha,<br><br> 
+                 <span style="padding-left: 30px;"> Ravi Gulati</span><br><br>
+                 <div class="col-sm-3">
+                   <img src="Images/ravig.png">
+                 </div><div class="col-sm-9">
+                   He is a post graduate in management from IIM, Ahmedabad and the Founder of Manzil, a non-profit organization. For over the last 10 years, he has been involved in nurturing the community of young people who come from the lower middle class background of New Delhi to learn, teach, be creative, and see the world in new ways.    </div>
+                 <br><br>
+                <p style="text-align: center;"></p>
+                </div>
+            </div>
+            </div>
+        </section>
+        <section style="padding-bottom: 0px;padding-top: 0px;">
+            <div class="end" style="position: relative;">
   <div class="col-sm-5" style="position: relative;padding-left: 145px;">
   <table>
     <tr><td><span class="lay"><a id="lk" href="f:" target="_blank" style="color: black;">FAQ</a></span></td>
@@ -105,6 +150,15 @@ $(window).focus(function(){
   </span>
   </div>
 </div>
-</div>
-</body>
-</html>
+        </section>
+    </div>
+</div><!-- #main -->
+
+
+
+
+
+</div><!-- /#wrapper -->
+
+
+</body></html>
